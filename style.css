@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Fredoka", sans-serif;
+}
+:root{
+    --primary:#e63946;
+}
+header{
+    height:10vh;
+    background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    color:var(--primary);
+}
+#logo span{
+    font-size: 12px;
+    background-color: #e63946;
+    color: white;
+    padding:3px 8px;
+    letter-spacing: 1px;
+}
+header a{
+    text-decoration: none;
+    color: #1d3557;
+    font-size: 20px;
+}
+header a:hover{
+    color:#e63946;
+}
+#header-search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#header-search-bar img{
+    cursor: pointer;
+    margin-left: 5px;
+}
+#header-search-bar input{
+    border:none;
+    outline:none;
+    border-radius: 17px;
+    padding:7px 5px;
+}
+header #sign-in{
+    font-weight: normal;
+    background-color: #e63946;
+    color: white;
+    padding: 10px;
+    border:2px solid #e63946;
+}
+header #sign-in:hover{
+    background-color: white;
+    color: #e63946;
+    border-color: #e63946;
+}
+
+#que-wrapper{  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.1rem;
+}
+#que-wrapper p:first-child{
+    background-color: #152c4d;
+    color: white;
+    width:100%;
+    text-align: center;
+    padding:10px 0;
+}
+
+#intro-lines-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width:100%;
+    margin: 30px auto;
+}
+#intro-lines-box img{
+    height:400px;
+    width:600px;
+}
+#intro-lines{
+    width:50%;
+    padding:30px;
+  
+}
+#intro-lines>div{
+    margin-top:20px;
+}
+#intro-lines>div>button{
+    padding:12px;
+    color:white;
+    background-color: #e63946;
+    border:none;
+    outline:none;
+    cursor: pointer;
+    font-size: 17px;
+}
+#intro-lines>div>button:nth-child(1){
+    margin-right:10px;
+}
+#intro-lines>div>button:hover{
+    background-color:#152c4d;
+}
+#que-wrapper h1{
+    color:#e63946;
+}
+#que-wrapper p{
+    color:#152c4d;
+}
+
+/*=-------- features section ---------*/
+#features{
+    margin-top: 5vh;
+    text-align: center;
+    width:100%;
+    font-size: 1.3rem;
+    background-color: rgb(229, 229, 229);
+    padding:30px 0;
+}
+#features>h2{
+    margin-bottom: 20px;
+    color:#e63946;
+}
+#boxes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#boxes .box{
+    padding:15px;
+    margin:10px;
+    width:80%;
+    background-color: white;
+    
+}
+#boxes .box img{
+    height:40px;
+    width:40px;
+    margin:10px;
+}
+#boxes .box h4{
+    color:#152c4d;
+    margin:10px;
+}
+#boxes .box p{
+    font-size: 18px;
+    color: #152c4d;
+}
+
+/*----------- pricing styles */
+#bus-size{
+    width:100%;
+    margin:30px auto;
+    text-align: center;
+}
+#bus-size>h1{
+    margin:15px 0;
+    text-align: center;
+    color:#e63946;
+}
+#bus-card-cover{
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+.bus-card{
+    margin:10px;
+    padding:20px;
+    width:30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(229, 229, 229);
+}
+.bus-card>h3{
+    color:#152c4d;
+    margin:10px 0;
+}
+.bus-card>p{
+text-align: center;
+}
+.bus-card>img{
+    height:50px;
+    width:50px;
+    margin:10px 0;
+}
+.bus-card>h4{
+    margin:15px 0 25px 0;
+    color:#152c4d;
+}
+.bus-card>button{
+    border:none;
+    outline:none;
+    cursor: pointer;
+    background-color:#e63946;
+    padding:10px;
+    color:white;
+}
+.bus-card>button:hover{
+    background-color: #152c4d;
+}
+
+
+#rating-header{
+    background-color: #152c4d;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    padding:15px;
+}
+
+#review-box-wrapper{
+}
+#rating-cover{
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:20px;
+    padding:20px;
+    z-index: 2;
+}
+#rating-cover-wrapper{
+    position: relative;
+    height: 100vh;
+}
+#rating-cover-bg{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin: 5% 10%;
+    text-align: center;
+   
+    z-index: 1;
+}
+#rating-cover-bg img{
+    height:500px;
+    width:500px;
+}
+#rating-cover .rating{
+    background-color: rgba(255, 255, 255, 0.4);
+    padding:20px 40px;
+}
+#rating-cover .rating>h2{
+    color:#152c4d;
+}
+#rating-cover .rating .company-name{
+    color: #e63946;
+}
+
+.rating p:not(.company-name){
+    position: relative;
+    font-style: italic;
+}
+.rating p:not(.company-name)::before{
+    content:'"';
+    font-size: 25px;
+}
+.rating p:not(.company-name)::after{
+    content:'"';
+    font-size: 25px;
+    position: absolute;
+    bottom:-3px;
+}
+#push-to-register{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#push-to-register img{
+    height:400px;
+    width:40%;
+}
+#register-box{
+    background-color: rgba(255, 255, 255, 0.49);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#register-box>h1{
+    color:#e63946;
+    background-color: white;
+    padding:10px;
+    display: inline;
+}
+#steps-container{
+    margin:10px;
+    padding:10px;
+    width: fit-content;
+    background-color: rgba(255, 255, 255, 0.618);
+}
+.step{
+    margin:20px 0;
+}
+.step p{
+    color:#152c4d;
+}
+.step h3{
+    color:#152c4d;
+}
+#create-acc{
+    padding:15px;
+    color:white;
+    background-color: #e63946;
+    border:none;
+    outline:none;
+    font-size: 17px;
+}
+#create-acc:hover{
+
+    background-color: #152c4d;
+}
+
+#pricing-chart-container{
+    margin:10vh 0;
+    text-align: center;
+    width:100%;
+}
+#pricing-chart-container>h1{
+    color: #e63946;
+    font-size: 3em;
+}
+#pricing-chart-container>p{
+    color:#152c4d;
+    margin-top: 5px;
+    font-size: 1.2em;
+}
+#plans-container{
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+    margin-top: 7vh;
+}
+.plan-box{
+    width:30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgb(229, 229, 229);
+    margin: 50px 0;
+}
+.price{
+    position: absolute;
+    top:-3.5em;
+    width:6em;
+    height:6em;
+    border-radius: 50%;
+    line-height: 6em;
+    color:#152c4d;
+    background-color: rgb(229, 229, 229);
+}
+.shadow>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:35px 10px;
+    color:#ffffff;
+    clip-path:polygon(
+        0 0,
+        100% 0%,
+        100% 80%,
+        50% 100%,
+        0 80%
+    );
+    height:35vh;
+}
+.shadow>div>h2{
+    margin:20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.shadow>div>p{
+    width:60%;
+    margin:0 5em;
+}
+.designer-bg1{
+    background-color:#5F41A8;
+}
+.designer-bg2{
+    background-color:#FF4D76;
+}
+.designer-bg3{
+    background-color:#EB5638;
+}
+.shadow{
+
+    width:100%;
+    filter:drop-shadow(
+        0 1em 1em rgba(0,0,0,0.2)
+    );
+}
+.other-fees{
+    padding:15px 0;
+}
+
+ul{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+li{
+    display: flex;
+    align-items: center;
+}
+li img{
+    height:20px;
+    width:20px;
+    margin-right:10px;
+}
+ul li{
+    margin:15px;
+    list-style-type: none;
+}
+ul{
+    margin-bottom:3em;
+}
+.plan-box>h3{
+    color: #152c4d;
+}
+.plan-box>button{
+    position: absolute;
+    bottom:-1em;
+    padding:15px;
+    border: none;
+    outline:none;
+    border-radius: 20px;
+    font-size: 25px;
+    color:white;
+    cursor: pointer;
+}
+.footer-content{
+    margin:10vh 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.footer-content div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.footer-content div a{
+    text-decoration: none;
+    margin:5px 0;
+}
+.footer-content div h2{
+    margin-bottom:20px;
+    color:#152c4d;
+}
+.footer-content div a:hover{
+    color:#e63946;
+}
+footer>p{
+    text-align: center;
+    margin-bottom:10px;
+    color: #152c4d;
+    font-weight: bold;
+}
+
+
+
+
+@media screen and (max-width:1000px){
+    #rating-cover-wrapper{
+        height:170vh;
+    }
+    #plans-container{
+        flex-direction: column;
+    }
+    .plan-box{
+        width:80%;
+        margin: 8vh auto;
+    }
+    #pricing-chart-container>h1{
+        font-size: 2em;
+    }
+    #pricing-chart-container>p{
+        font-size: 1em;
+    }
+}
+
+
+@media screen and (max-width:700px) {
+    #header-search-bar{
+        display: none;
+    }
+    #que-wrapper{
+        text-align: center;
+    }
+    #que-wrapper>p:first-child{
+        font-size: 12px;
+        padding:10px;
+    }
+    #intro-lines{
+        padding:10px;
+        font-size: 0.6rem;
+    }
+    #que-wrapper #line1{
+        font-size: 1.5rem;
+    }
+    #que-wrapper #line2{
+        font-size: 1rem;
+        margin-top: 5px;
+    }
+    #intro-lines-cover{
+        margin:20px auto;
+        height:110px;
+    }
+    @keyframes growBg {
+        100%{
+            width:100%;
+            height:110px;
+        }
+    }
+    #intro-lines-cover img{
+        height:30px !important;
+        width:30px !important;
+
+    }
+    #intro-lines-cover #star1{
+        top:-16%;
+        left:-5%;
+    }
+    #intro-lines-cover #star2{
+        bottom:-9%;
+        right:-5%;
+    }
+    #services-box{
+        margin-top:10px;
+        font-size: 1.2rem;
+        flex-direction: column;
+    }
+    .service{
+        width:80%;
+        margin-top:10px;
+    }
+
+    #bus-card-cover{
+        flex-direction: column;
+    }
+    .bus-card{
+        width:80%;
+        margin-bottom:30px;
+    }
+    #rating-cover-wrapper{
+        height:230vh;
+    }
+    #rating-cover{
+        grid-template-columns: 1fr;
+    }
+    #rating-cover .rating{
+        background-color: white;
+        padding:10px;
+    }
+    #rating-cover-bg{
+        display: none;
+    }
+}
